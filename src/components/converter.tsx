@@ -44,7 +44,7 @@ export const Converter = () => {
           />
 
           <div className="space-y-2">
-            <Label htmlFor="result">Converted time</Label>
+            <Label htmlFor="result">Converted time (HH:MM:SS)</Label>
             <div className="relative">
               <Input
                 value={result ? result : "Please Complete The Field"}

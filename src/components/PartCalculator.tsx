@@ -83,8 +83,13 @@ export default function PartCalculator() {
               const part = (v / totalNumber) * 100 || 0;
               return (
                 <li key={i}>
-                  Valeur #{i + 1}: {v.toLocaleString()} →{" "}
-                  <strong>{part.toFixed(2)}%</strong>
+                  <span className="pointer-events-none select-none">
+                    Valeur #{i + 1}: {v.toLocaleString()} →{" "}
+                  </span>
+                  <strong>
+                    {part.toFixed(2)}
+                    <span className="pointer-events-none select-none">%</span>
+                  </strong>
                 </li>
               );
             })}

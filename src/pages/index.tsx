@@ -1,9 +1,9 @@
-import { Converter } from "../components/converter";
+import { TimeCalculator } from "../components/TimeCalculator";
 
 export default async function HomePage() {
   return (
     <div>
-      <Converter />
+      <TimeCalculator />
     </div>
   );
 }

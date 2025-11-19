@@ -50,7 +50,9 @@ export const TimeCalculator: React.FC = () => {
         total += diff / 60;
       }
     });
-    return total.toFixed(1);
+
+    const rounded = Math.ceil(total * 4) / 4;
+    return rounded.toFixed(2);
   };
 
   const handleCopy = () => {
